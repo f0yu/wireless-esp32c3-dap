@@ -17,6 +17,8 @@ static struct {
 } wifi_list[] __attribute__((unused)) = {
     {.ssid = "OTA", .password = "12345678"},
     {.ssid = "DAP", .password = "12345678"},
+    {.ssid = "v831", .password = "2312706700"},
+   // {.ssid = "v831", .password = "2312706700"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
 };
