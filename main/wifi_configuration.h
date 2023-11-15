@@ -17,14 +17,14 @@ static struct {
 } wifi_list[] __attribute__((unused)) = {
     {.ssid = "OTA", .password = "12345678"},
     {.ssid = "DAP", .password = "12345678"},
-   // {.ssid = "v831", .password = "2312706700"},
+    {.ssid = "v831", .password = "2312706700"},
     // Add your WAP like this:
     // {.ssid = "your ssid", .password = "your password"},
 };
 
 #define WIFI_LIST_SIZE (sizeof(wifi_list) / sizeof(wifi_list[0]))
 
-#define USE_MDNS       1
+#define USE_MDNS       0
 // Use the address "dap.local" to access the device
 #define MDNS_HOSTNAME "dap"
 #define MDNS_INSTANCE "DAP mDNS"
@@ -32,8 +32,8 @@ static struct {
 
 #define USE_STATIC_IP 1
 // If you don't want to specify the ip configuration, then ignore the following items.
-#define DAP_IP_ADDRESS 192, 168, 1, 123
-#define DAP_IP_GATEWAY 192, 168, 1, 1
+#define DAP_IP_ADDRESS 192, 168, 137, 123
+#define DAP_IP_GATEWAY 192, 168, 137, 1
 #define DAP_IP_NETMASK 255, 255, 255, 0
 //
 
